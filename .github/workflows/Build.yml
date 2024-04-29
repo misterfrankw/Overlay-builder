@@ -19,13 +19,14 @@ jobs:
 
     - name: Prepare the environment
       run: |
-        uname -s
-        sudo apt -y install git-core git xmlstarlet
+        sudo apt -y install git-core git xmlstarlet 
+        sudo apt-get install neofetch
         sudo apt update
 
     - name: Clone vendor_hardware_overlay
       run: |
         PATH=~/bin:$PATH
+        neofetch
         mkdir workspace
         cd workspace
         git clone ${{github.event.inputs.FORK_URL }}
