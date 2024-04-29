@@ -19,6 +19,7 @@ jobs:
 
     - name: Prepare the environment
       run: |
+        uname -s
         sudo apt -y install git-core git xmlstarlet
         sudo apt update
 
