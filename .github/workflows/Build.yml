@@ -6,7 +6,7 @@ on:
       FORK_URL:
         description: 'FORKED_URL'
         required: true
-        default: 'https://github.com/phhusson/vendor_hardware_overlay'
+        default: 'https://github.com/misterfrankw/vendor_hardware_overlay'
 
 jobs:
   build:
@@ -35,8 +35,8 @@ jobs:
       run: |
         PATH=~/bin:$PATH
         cd workspace && cd vendor_hardware_overlay
-        git config --global user.name "Johx22"
-        git config --global user.email "johannjose2004@gmail.com"
+        git config --global user.name "ArvaidasR"
+        git config --global user.email "arvrekis@gmail.com"
         cd tests
         bash tests.sh
 
